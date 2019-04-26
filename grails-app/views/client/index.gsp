@@ -17,7 +17,7 @@
     <g:each in= "${result}" var="it">
         <li>
             <g:link action="categories" id="${it.id}">
-                ${it.name}
+                ${it.name}  ${flash.message}
             </g:link>
         </li>
     </g:each>

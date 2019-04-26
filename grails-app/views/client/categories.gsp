@@ -9,16 +9,18 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Lista de Sites</title>
+    <title>Lista de categorias</title>
 </head>
 
 <body>
-<ul>
-    <g:each in= "${result}" var="it">
-        <li>
-                ${it.name}
-        </li>
-    </g:each>
+    <ul>
+<g:each in= "${result}" var="it">
+    <li>
+        <g:link action="subcategories" id="${it.id}">
+            ${it.name}
+        </g:link>
+    </li>
+</g:each>
 </ul>
 </body>
 </html>
