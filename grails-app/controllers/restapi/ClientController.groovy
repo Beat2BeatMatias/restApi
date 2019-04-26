@@ -44,6 +44,11 @@ class ClientController {
         }
 
     }
+    def borrar(){
+        Site.list().each {it -> if (!(it.id=="MM1"||it.id=="MM2"||it.id=="MM3")) it.delete(flush: true, failOnError: true)}
+        flash.message="Borrados los datos"
+        render view:'error'
+    }
     def categories(Site site){
 
         def url = new URL("https://api.mercadolibre.com/sites/"+params.id+"/categories")

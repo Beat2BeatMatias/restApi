@@ -19,7 +19,7 @@ class Site {
     }
     static constraints = {
         //id generator:'assigned'
-        id bindable:false
+
     }
     static mapping = {
         id generator:'assigned'

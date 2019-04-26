@@ -8,7 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title></title>
+    <meta name="layout" content="main"/>
+    <title>Error</title>
 </head>
 
 <body>
@@ -16,6 +17,9 @@
 <g:form action="index" >
     <g:textField name="limite" value=""/>
     <g:submitButton name="Entrar"/>
+</g:form>
+<g:form action="borrar">
+    <g:submitButton name="Borrar"/>
 </g:form>
 <script type="text/javascript">
     function volverPagina() {
