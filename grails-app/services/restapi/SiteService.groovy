@@ -6,13 +6,7 @@ import grails.gorm.transactions.Transactional
 class SiteService {
 
     def serviceMethod(Integer limite) {
-        if (Site.list().size() > limite) {
-            true
-
-        } else {
-            false
-
-        }
+        return Site.list().size() > limite
     }
 
     def comprobarDuplicacion(Object listaJson) {
