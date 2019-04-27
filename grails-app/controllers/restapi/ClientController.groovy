@@ -22,7 +22,7 @@ class ClientController {
         BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), "UTF-8"))
         int read = 0;
         StringBuffer buffer = new StringBuffer()
-        char[] chars = new char[1024];
+        char[] chars = new char[1024]
         while ((read = reader.read(chars)) != -1) {
             buffer.append(chars, 0, read)
         }
